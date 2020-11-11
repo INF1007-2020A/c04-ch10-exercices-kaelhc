@@ -1,0 +1,20 @@
+test_closest (__main__.TestExercice) ... ok
+test_coordinates (__main__.TestExercice) ... ERROR
+test_linear_values (__main__.TestExercice) ... ok
+
+======================================================================
+ERROR: test_coordinates (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 26, in test_coordinates
+    output = exercice.coordinate_conversion(cartesian_coordinates)
+  File "/home/runner/work/c04-ch10-exercices-kaelhc/c04-ch10-exercices-kaelhc/exercice.py", line 20, in coordinate_conversion
+    return np.array([(np.sqrt(c[0]**2 + c[1]**2),np.arctan(c[1],c[0])) for c in cartesian_coordinates])
+  File "/home/runner/work/c04-ch10-exercices-kaelhc/c04-ch10-exercices-kaelhc/exercice.py", line 20, in <listcomp>
+    return np.array([(np.sqrt(c[0]**2 + c[1]**2),np.arctan(c[1],c[0])) for c in cartesian_coordinates])
+TypeError: return arrays must be of ArrayType
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (errors=1)
