@@ -23,7 +23,6 @@ def coordinate_conversion(cartesian_coordinates: np.ndarray) -> np.ndarray:
 
 def find_closest_index(values: np.ndarray, number: float) -> int:
 
-
     return np.abs(values-number).argmin()
 
 
@@ -62,7 +61,7 @@ def monte_carlo(iteration=50000)->float :
            y_outside.append(y)
 
     ply.scatter(x_inside,y_inside)
-    ply.scatter(x_outside,y_outside)
+    ply.scatter(x_outside,y_outside,color="red")
     ply.show()
     return 4*p/iteration
 
